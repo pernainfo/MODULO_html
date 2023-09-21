@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<title>Formulário de Cadastro de Currículo</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"	>
+	</head>
+
+<body>
+    <h1>Cadastre seu Currículo</h1>
+    <form>
+        <!-- DADOS PESSOAIS -->
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="nome">Nome Completo</label>
+            <input type="text" id="nome" name="nome" required>
+			<br><br>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+			<br><br>
+
+            <label for="telefone">Telefone com DDD</label>
+            <input type="tel" id="telefone" name="telefone" required placeholder="XX XXXXX XXXX">
+			<br><br>
+
+            <label for="endereco">Endereço Completo</label>
+            <input type="text" id="endereco" name="endereco" required placeholder="Rua, 1234, Bairro, CEP, Cidade - Estado" maxlength="90">
+			<br><br>
+        </fieldset>
+
+        <!-- OBJETIVO -->
+        <fieldset>
+            <legend>Objetivo</legend>
+            <label for="objetivo">Objetivo</label>
+            <textarea id="objetivo" name="objetivo" rows="4"></textarea>
+			<br><br>
+        </fieldset>
+
+        <!-- FORMAÇÃO -->
+        <fieldset>
+            <legend>Formação Acadêmica</legend>
+            <label for="formacao">Formação</label>
+            <input type="text" id="formacao" name="formacao" required>
+			<br><br>
+
+            <label for="instituicao">Instituição de Ensino</label>
+            <input type="text" id="instituicao" name="instituicao">
+			<br><br>
+
+            <label for="ano_conclusao">Ano de Conclusão</label>
+            <input type="text" id="ano_conclusao" name="ano_conclusao">
+			<br><br>
+        </fieldset>
+
+        <!-- HABILIDADES -->
+        <fieldset>
+            <legend>Habilidades e Competências</legend>
+            <label for="habilidades">Habilidades</label>
+         <!--<input type="text" id="habilidades" name="habilidades">  -->
+		    <textarea id="habilidades" name="habilidades" rows="6"></textarea>
+
+			<br><br>
+        </fieldset>
+
+        <!-- CURSOS -->
+        <fieldset>
+            <legend>Cursos</legend>
+            <label for="curso">Cursos</label>
+            <input type="text" id="curso" name="curso">
+			<br><br>
+        </fieldset>
+
+        <!-- EXPERIÊNCIA -->
+        <fieldset>
+            <legend>Experiência Profissional</legend>
+            <div>
+                <label for="empresa1">Empresa 1</label>
+                <input type="text" id="empresa1" name="empresa1">
+				<br><br>
+
+                <label for="cargo1">Cargo</label>
+                <input type="text" id="cargo1" name="cargo1">
+				<br><br>
+
+                <label for="periodo1">Período</label>
+                <input type="text" id="periodo1" name="periodo1">
+				<br><br><br>
+            </div>
+            <div>
+                <label for="empresa2">Empresa 2</label>
+                <input type="text" id="empresa2" name="empresa2">
+				<br><br>
+
+                <label for="cargo2">Cargo</label>
+                <input type="text" id="cargo2" name="cargo2">
+				<br><br>
+
+                <label for="periodo2">Período</label>
+                <input type="text" id="periodo2" name="periodo2">
+				<br><br><br>
+            </div>
+            <div>
+                <label for="empresa3">Empresa 3</label>
+                <input type="text" id="empresa3" name="empresa3">
+				<br><br>
+
+                <label for="cargo3">Cargo</label>
+                <input type="text" id="cargo3" name="cargo3">
+				<br><br>
+
+                <label for="periodo3">Período</label>
+                <input type="text" id="periodo3" name="periodo3">
+				<br><br><br>
+            </div>
+        </fieldset>
+
+        <!-- COMPLEMENTARES -->
+        <fieldset>
+            <legend>Informações Complementares</legend>
+            <label for="complementares">Informações Complementares</label>
+            <textarea id="complementares" name="complementares" rows="4"></textarea>
+			<br><br>
+        </fieldset>
+		<br>
+		<label for="LGPD"> Concordo com o envio de minhas informações pessoais para legítiima finalidade, de acordo com a LGPD.</label>
+			<input type="radio" name="LGPD" value="LGPD" required>	
+		<br><br>
+        <input type="submit" value="Confirmar">
+    </form>
+</body>
+</html>
